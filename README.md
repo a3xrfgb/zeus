@@ -1,5 +1,7 @@
 # Zeus | Electron based AI desktop App
 
+<img width="2191" height="1543" alt="zz" src="https://github.com/user-attachments/assets/33c4be3c-cca5-44a2-b4f1-e9cfbc7c5e63" />
+
 
 ## Prerequisites
 
