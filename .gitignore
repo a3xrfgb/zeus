@@ -1,0 +1,10 @@
+node_modules/
+out/
+release/
+release-build/
+release-pack-*/
+dist/
+core/target/
+core/target-build2/
+*.log
+.DS_Store

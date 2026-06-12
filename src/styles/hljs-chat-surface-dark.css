@@ -1,0 +1,78 @@
+/* GitHub Dark token colors for chat code blocks — only under .dark .zeus-chat-code-surface (beats global github.css). */
+.dark .zeus-chat-code-surface pre.hljs {
+  color: #c9d1d9;
+  background: transparent !important;
+}
+.dark .zeus-chat-code-surface .hljs-doctag,
+.dark .zeus-chat-code-surface .hljs-keyword,
+.dark .zeus-chat-code-surface .hljs-meta .hljs-keyword,
+.dark .zeus-chat-code-surface .hljs-template-tag,
+.dark .zeus-chat-code-surface .hljs-template-variable,
+.dark .zeus-chat-code-surface .hljs-type,
+.dark .zeus-chat-code-surface .hljs-variable.language_ {
+  color: #ff7b72;
+}
+.dark .zeus-chat-code-surface .hljs-title,
+.dark .zeus-chat-code-surface .hljs-title.class_,
+.dark .zeus-chat-code-surface .hljs-title.class_.inherited__,
+.dark .zeus-chat-code-surface .hljs-title.function_ {
+  color: #d2a8ff;
+}
+.dark .zeus-chat-code-surface .hljs-attr,
+.dark .zeus-chat-code-surface .hljs-attribute,
+.dark .zeus-chat-code-surface .hljs-literal,
+.dark .zeus-chat-code-surface .hljs-meta,
+.dark .zeus-chat-code-surface .hljs-number,
+.dark .zeus-chat-code-surface .hljs-operator,
+.dark .zeus-chat-code-surface .hljs-variable,
+.dark .zeus-chat-code-surface .hljs-selector-attr,
+.dark .zeus-chat-code-surface .hljs-selector-class,
+.dark .zeus-chat-code-surface .hljs-selector-id {
+  color: #79c0ff;
+}
+.dark .zeus-chat-code-surface .hljs-regexp,
+.dark .zeus-chat-code-surface .hljs-string,
+.dark .zeus-chat-code-surface .hljs-meta .hljs-string {
+  color: #a5d6ff;
+}
+.dark .zeus-chat-code-surface .hljs-built_in,
+.dark .zeus-chat-code-surface .hljs-symbol {
+  color: #ffa657;
+}
+.dark .zeus-chat-code-surface .hljs-comment,
+.dark .zeus-chat-code-surface .hljs-code,
+.dark .zeus-chat-code-surface .hljs-formula {
+  color: #8b949e;
+}
+.dark .zeus-chat-code-surface .hljs-name,
+.dark .zeus-chat-code-surface .hljs-quote,
+.dark .zeus-chat-code-surface .hljs-selector-tag,
+.dark .zeus-chat-code-surface .hljs-selector-pseudo {
+  color: #7ee787;
+}
+.dark .zeus-chat-code-surface .hljs-subst {
+  color: #c9d1d9;
+}
+.dark .zeus-chat-code-surface .hljs-section {
+  color: #58a6ff;
+  font-weight: bold;
+}
+.dark .zeus-chat-code-surface .hljs-bullet {
+  color: #f2cc60;
+}
+.dark .zeus-chat-code-surface .hljs-emphasis {
+  color: #c9d1d9;
+  font-style: italic;
+}
+.dark .zeus-chat-code-surface .hljs-strong {
+  color: #c9d1d9;
+  font-weight: bold;
+}
+.dark .zeus-chat-code-surface .hljs-addition {
+  color: #aff5b4;
+  background-color: #033a16;
+}
+.dark .zeus-chat-code-surface .hljs-deletion {
+  color: #ffdcd7;
+  background-color: #67060c;
+}

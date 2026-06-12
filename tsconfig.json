@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@tauri-apps/api/core": ["./src/lib/desktop/core.ts"],
+      "@tauri-apps/api/window": ["./src/lib/desktop/window.ts"],
+      "@tauri-apps/api/event": ["./src/lib/desktop/event.ts"],
+      "@tauri-apps/api/path": ["./src/lib/desktop/path.ts"],
+      "@tauri-apps/api/dpi": ["./src/lib/desktop/dpi.ts"],
+      "@tauri-apps/api/webview": ["./src/lib/desktop/webview.ts"],
+      "@tauri-apps/plugin-dialog": ["./src/lib/desktop/dialog.ts"],
+      "@tauri-apps/plugin-fs": ["./src/lib/desktop/fs.ts"],
+      "@tauri-apps/plugin-shell": ["./src/lib/desktop/shell.ts"]
+    }
+  },
+  "include": ["src", "electron"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
