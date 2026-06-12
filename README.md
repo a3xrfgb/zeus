@@ -1,16 +1,5 @@
-# Zeus (Electron)
+# Zeus | Electron based AI desktop App
 
-Electron-based desktop build of Zeus. The original Tauri app lives in the parent folder; this folder is a standalone Electron port.
-
-## Architecture
-
-| Layer | Technology |
-|-------|------------|
-| UI | React + Vite (same `src/` as Tauri app) |
-| Shell | Electron (frameless transparent window) |
-| Native APIs | Electron main process (dialog, fs, shell, custom `zeus-local://` protocol) |
-| Backend | Rust **sidecar** (`core/`) — same logic as `src-tauri/`, HTTP `/invoke` bridge |
-| ML scripts | Python in `scripts/` (bundled as extraResources) |
 
 ## Prerequisites
 
@@ -59,16 +48,5 @@ Cross-platform: `npm run pack` (builds for the current OS).
 
 ## Data directory
 
-Same as Tauri: `~/.zeus/` (models, SQLite DB, logs, outputs).
+ `~/.zeus/` (models, SQLite DB, logs, outputs).
 
-## IPC mapping
-
-- Frontend still imports `@tauri-apps/*` — aliased to `src/lib/desktop/*` shims.
-- `src/lib/tauri.ts` `api.*` calls unchanged; routed through preload → main → sidecar or native handlers.
-- Events: `zeus-token`, `zeus-download-progress`, `zeus-runtime-download`, `ai-hub-token`, `ai-hub-stream-done`.
-
-## Differences from Tauri build
-
-- Larger install size (Chromium + Node + sidecar).
-- Window drag uses `-webkit-app-region` where applicable; custom resize handles preserved.
-- No Tauri asset protocol — replaced by `zeus-local://local?path=...`.
